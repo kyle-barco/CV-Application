@@ -1,0 +1,9 @@
+/* header */
+.header {
+  font-size: .85rem;
+  text-align: center;
+}
+
+.icons svg {
+  width: 20px;
+}
