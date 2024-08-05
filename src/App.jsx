@@ -10,12 +10,6 @@ import './App.css'
 
 function App() {
   const [personalInfo, setPersonalInfo] = useState(exampleData.personalInfo)
-  const [file, setFile] = useState()
-
-  function handleFileChange(e){
-    setFile(URL.createObjectURL(e.target.files[0]))
-  }
-
   function handleIntroPersonalInfo(e) {
     const { key } = e.target.dataset
     setPersonalInfo({ ...personalInfo, [key]: e.target.value })

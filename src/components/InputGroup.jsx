@@ -2,10 +2,11 @@ const InputGroup = ({
   id,
   placeholder,
   type,
-  onChange,
+  onChangeData,
   labelText,
   value,
   accept,
+  profilePicChange,
   "data-key": dataKey
 }) => {
 
@@ -18,10 +19,16 @@ const InputGroup = ({
         <textarea
           id={id}
           placeholder={placeholder}
-          onChange={onChange}
+          onChange={onChangeData}
           value={value}
           data-key={dataKey}
         ></textarea>
+      ) : type === "file" ? (
+        <input
+          type="file"
+          id="file"
+          onChange={profilePicChange}
+        />
       ) : (
         <input
           type={type}
@@ -29,7 +36,7 @@ const InputGroup = ({
           id={id}
           value={value}
           placeholder={placeholder}
-          onChange={onChange}
+          onChange={onChangeData}
           data-key={dataKey}
         />
       )}

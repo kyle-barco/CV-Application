@@ -1,7 +1,13 @@
+import { useState } from "react"
 import InputGroup from "../../InputGroup"
 
-
 const IntroPersonalInfoForm = ({ onChange, profilePic, fullName, currPos, abtSelf }) => {
+  const [file, setFile] = useState()
+
+  function handleFileChange(e) {
+    setFile(URL.createObjectURL(e.target.files[0]))
+  }
+
 
   return (
     <form action="" className="intro-personal" >
@@ -12,7 +18,7 @@ const IntroPersonalInfoForm = ({ onChange, profilePic, fullName, currPos, abtSel
         data-key="profilePic"
         accept="image/"
         id="file"
-        onChange={onChange}
+        onChange={handleFileChange}
       />
       <InputGroup
         type="text"
