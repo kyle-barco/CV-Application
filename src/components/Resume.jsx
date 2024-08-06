@@ -12,6 +12,9 @@ const Resume = ({ personalInfo }) => {
       />
       <MainContent 
         email={personalInfo.email}
+        mobileNum={personalInfo.phoneNumber}
+        facebook={personalInfo.facebookAcc}
+        website={personalInfo.websiteUrl}
       />
     </div>
   )

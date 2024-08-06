@@ -10,6 +10,7 @@ import './App.css'
 
 function App() {
   const [personalInfo, setPersonalInfo] = useState(exampleData.personalInfo)
+  const [sectionOpen, setSectionOpen] = useState(null)
 
   function handleIntroPersonalInfo(e) {
     const { key } = e.target.dataset
