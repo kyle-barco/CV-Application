@@ -1,5 +1,5 @@
 import IntroSection from "./personal-info/intro/IntroSection"
-
+import MainContent from "./personal-info/main-content/MainContent"
 
 const Resume = ({ personalInfo }) => {
   return (
@@ -9,6 +9,12 @@ const Resume = ({ personalInfo }) => {
         fullName={personalInfo.fullName}
         currPos={personalInfo.currentPosition}
         abtSelf={personalInfo.aboutSelf}
+      />
+      <MainContent 
+        email={personalInfo.email}
+        mobileNum={personalInfo.phoneNumber}
+        facebook={personalInfo.facebookAcc}
+        website={personalInfo.websiteUrl}
       />
     </div>
   )

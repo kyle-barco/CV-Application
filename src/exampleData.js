@@ -8,6 +8,8 @@ const exampleData = {
     profilePicUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Anonymous.svg/433px-Anonymous.svg.png",
     email: "john.doe@mail.co.uk",
     phoneNumber: "+44 3245 5521 5521",
+    facebookAcc: "John Doe",
+    websiteUrl: "johndoe.com",
     address: "London, UK",
   },
 

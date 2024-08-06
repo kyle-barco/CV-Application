@@ -10,20 +10,27 @@ import './App.css'
 
 function App() {
   const [personalInfo, setPersonalInfo] = useState(exampleData.personalInfo)
+  const [sectionOpen, setSectionOpen] = useState(null)
+
   function handleIntroPersonalInfo(e) {
     const { key } = e.target.dataset
     setPersonalInfo({ ...personalInfo, [key]: e.target.value })
+  }
+
+  function handleIntroPersonalInfoPic(e) {
+    setPersonalInfo({
+      ...personalInfo,
+      profilePicUrl: URL.createObjectURL(e.target.files[0])
+    })
   }
 
   return (
     <>
       <Header />
       <IntroPersonalInfoForm
-        onChange={handleIntroPersonalInfo}
-        profilePic={personalInfo.profilePicUrl}
-        fullName={personalInfo.fullName}
-        currPos={personalInfo.currentPosition}
-        abtSelf={personalInfo.aboutSelf}
+        data={personalInfo}
+        pictureUpload={handleIntroPersonalInfoPic}
+        handleData={handleIntroPersonalInfo}
 
       />
       <Resume
