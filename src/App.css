@@ -1,16 +1,24 @@
+.open {
+  height: auto;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity, transform, visibility;
+  transition-duration: 0.25s;
+  visibility: visible;
+}
+
 /* header */
-img{
+img {
   max-width: 100%;
   width: 100px;
-  
 }
 
 .header {
-  font-size: .85rem;
+  font-size: 0.85rem;
   text-align: center;
 }
 
-.icons svg{
+.icons svg {
   color: black;
   font-size: 30px;
 }

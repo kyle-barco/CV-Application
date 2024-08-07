@@ -1,19 +1,22 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import "../../styles/personal-info.css"
 import { useState } from 'react'
 
 const IntroPersonalInfoForm = ({ data, pictureUpload, handleData }) => {
   const [clicked, setCliked] = useState(false)
+
   return (
     <div className="intro-personal" >
-      <button 
+      <button
         onClick={() => setCliked(!clicked)}
         className="expand-section">
         <h2>Personal Information</h2>
-        <FontAwesomeIcon icon={faChevronUp} className='icons' />
+        <FontAwesomeIcon icon={clicked ? faChevronUp : faChevronDown} className='icons' />
+
       </button>
-      <div className="section-content">
+      <div className={`section-content ${clicked ? "open" : ''}`}>
         <div className="intro">
           <h3>Introduction</h3>
           <div className="profile-pic">

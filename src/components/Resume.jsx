@@ -1,7 +1,7 @@
 import IntroSection from "./personal-info/intro/IntroSection"
 import MainContent from "./personal-info/main-content/MainContent"
 
-const Resume = ({ personalInfo }) => {
+const Resume = ({ personalInfo, sections }) => {
   return (
     <div className="resume-container">
       <IntroSection
@@ -15,6 +15,11 @@ const Resume = ({ personalInfo }) => {
         mobileNum={personalInfo.phoneNumber}
         facebook={personalInfo.facebookAcc}
         website={personalInfo.websiteUrl}
+        schoolName={sections.educations[0].schoolName}
+        degree={sections.educations[0].degree}
+        location={sections.educations[0].location}
+        startDate={sections.educations[0].startDate}
+        endDate={sections.educations[0].endDate}
       />
     </div>
   )

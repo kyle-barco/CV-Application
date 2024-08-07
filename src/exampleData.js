@@ -1,41 +1,41 @@
-// import uniqid from "uniqid";
+import uniqid from "uniqid";
 
 const exampleData = {
   personalInfo: {
-    fullName: "John Doe",
+    fullName: "Kyle Barco",
     currentPosition: "Sofware Engineer",
     aboutSelf: "An average joe",
-    profilePicUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Anonymous.svg/433px-Anonymous.svg.png",
-    email: "john.doe@mail.co.uk",
+    profilePicUrl: "https://avatars.githubusercontent.com/u/101305133?v=4",
+    email: "kyle.barco@example.email.com",
     phoneNumber: "+44 3245 5521 5521",
-    facebookAcc: "John Doe",
-    websiteUrl: "johndoe.com",
-    address: "London, UK",
+    facebookAcc: "Kyle Barco",
+    websiteUrl: "kb.example.com",
+    address: "Manila, Philippines",
   },
 
-  // sections: {
-  //   educations: [
-  //     {
-  //       degree: "Bachelors in Economics",
-  //       schoolName: "London City University",
-  //       location: "New York City, US",
-  //       startDate: "08/2020",
-  //       endDate: "present",
-  //       isCollapsed: true,
-  //       isHidden: false,
-  //       id: uniqid(),
-  //     },
-  //     {
-  //       degree: "Master's Degree in Math",
-  //       schoolName: "Hidden University",
-  //       location: "New York City, US",
-  //       startDate: "08/2020",
-  //       endDate: "present",
-  //       isCollapsed: true,
-  //       isHidden: true,
-  //       id: uniqid(),
-  //     },
-  //   ],
+  sections: {
+    educations: [
+      {
+        degree: "Bachelor of Science in Information Technology",
+        schoolName: "Polytechnic University Of The Philippines",
+        location: "Sta. Mesa Manila, Philippines",
+        startDate: "08/2020",
+        endDate: "present",
+        // isCollapsed: true,
+        // isHidden: false,
+        id: uniqid(),
+      },
+      {
+        degree: "Master's Degree in Math",
+        schoolName: "Hidden University",
+        location: "New York City, US",
+        startDate: "08/2020",
+        endDate: "present",
+        isCollapsed: true,
+        isHidden: true,
+        id: uniqid(),
+      },
+    ],
   //
   //   experiences: [
   //     {
@@ -63,7 +63,7 @@ const exampleData = {
   //       id: uniqid(),
   //     },
   //   ],
-  // },
+  },
 };
 
 export default exampleData;
