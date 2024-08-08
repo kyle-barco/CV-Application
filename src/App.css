@@ -7,18 +7,13 @@
   visibility: visible;
 }
 
-/* header */
 img {
   max-width: 100%;
-  width: 100px;
 }
 
-.header {
-  font-size: 0.85rem;
-  text-align: center;
+.forms .intro-personal {
 }
 
-.icons svg {
-  color: black;
-  font-size: 30px;
+.forms .form-item {
+  margin-bottom: 1em;
 }

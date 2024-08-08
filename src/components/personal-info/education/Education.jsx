@@ -9,7 +9,7 @@ const Education = ({ data, handleData }) => {
   const [clicked, setCliked] = useState(false)
 
   return (
-    <div className="education-section" >
+    <div className="education-section form-item" >
       <button
         onClick={() => setCliked(!clicked)}
         className="expand-section">

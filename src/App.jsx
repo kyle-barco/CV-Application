@@ -47,19 +47,22 @@ function App() {
   return (
     <>
       <Header />
-      <IntroPersonalInfoForm
-        data={personalInfo}
-        pictureUpload={handleIntroPersonalInfoPic}
-        handleData={handleIntroPersonalInfo}
-      />
-      <Education
-        handleData={handleSectionChange}
-        data={sections}
-      />
-      <Experience 
-        handleData={handleSectionChange}
-        data={sections}
-      />
+      <aside className='forms'>
+
+        <IntroPersonalInfoForm
+          data={personalInfo}
+          pictureUpload={handleIntroPersonalInfoPic}
+          handleData={handleIntroPersonalInfo}
+        />
+        <Education
+          handleData={handleSectionChange}
+          data={sections}
+        />
+        <Experience
+          handleData={handleSectionChange}
+          data={sections}
+        />
+      </aside>
 
       <Resume
         personalInfo={personalInfo}

@@ -8,7 +8,7 @@ const IntroPersonalInfoForm = ({ data, pictureUpload, handleData }) => {
   const [clicked, setCliked] = useState(false)
 
   return (
-    <div className="intro-personal" >
+    <div className="intro-personal form-item" >
       <button
         onClick={() => setCliked(!clicked)}
         className="expand-section">
