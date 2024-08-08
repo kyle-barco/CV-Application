@@ -1,6 +1,7 @@
 :root {
   --clr-intro-bg: #959595;
   --clr-font: #a8dded;
+  --clr-font-secondary: #0f91ba;
   --clr-main-content-bg: #e3e3e3;
 }
 
@@ -69,12 +70,88 @@
 /* MAIN CONTENT */
 .main-content {
   display: flex;
-  gap: .75em;
+  gap: 0.75em;
   background: var(--clr-main-content-bg);
+  padding: 1.5em 1em 1em 1em;
+  min-height: 20rem;
 }
 
 .title-resume {
   font-size: 1.1rem;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+.contact-resume,
+.education-resume {
+  max-width: 100%;
+}
+
+.job-experience-resume,
+.contact-and-education-wrapper {
+  max-width: 50%;
+}
+
+.job-experience-list-item,
+.education-list-item {
+  overflow-wrap: break-word;
+}
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+}
+
+.input-value{
+  word-break: break-all;
+}
+
+.contact-and-education-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.company-name-resume,
+.school-name-resume {
+  color: var(--clr-font-secondary);
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 1.2;
+}
+
+.position-title-resume,
+.degree-resume {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.job-experience-list {
+  display: flex;
+  gap: 0.5em;
+}
+
+.job-start-end-date,
+.school-start-end-date {
+  max-width: 30%;
+  overflow-wrap: break-word;
+}
+
+.company-position-desc,
+.school-degree-location {
+  max-width: 70%;
+}
+
+.education-list {
+  display: flex;
+  gap: 0.5em;
+}
+
+td:not(.input-value){
+  color: var(--clr-font-secondary);
+  font-weight: 600;
+}
+
+.angles-right{
+  color: var(--clr-font-secondary);
 }

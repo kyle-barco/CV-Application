@@ -3,8 +3,8 @@ import uniqid from "uniqid";
 const exampleData = {
   personalInfo: {
     fullName: "Kyle Barco",
-    currentPosition: "Sofware Engineer",
-    aboutSelf: "An average joe",
+    currentPosition: "Sofware Developer",
+    aboutSelf: "pogi",
     profilePicUrl: "https://avatars.githubusercontent.com/u/101305133?v=4",
     email: "kyle.barco@example.email.com",
     phoneNumber: "+44 3245 5521 5521",
@@ -16,7 +16,7 @@ const exampleData = {
   sections: {
     educations: [
       {
-        degree: "Bachelor of Science in Information Technology",
+        degree: "Diploma in Information Technology",
         schoolName: "Polytechnic University Of The Philippines",
         location: "Sta. Mesa Manila, Philippines",
         startDate: "08/2020",
@@ -39,13 +39,12 @@ const exampleData = {
 
     experiences: [
       {
-        companyName: "Umbrella Inc.",
-        positionTitle: "UX & UI Designer",
-        location: "New York City, US",
-        description:
-          "Designed and prototyped user interface patterns for various clients in various industries, ranging from self-service apps within the telecommunications-sector to mobile games for IOS and Android",
-        startDate: "08/2020",
-        endDate: "present",
+        companyName: "Savemore Primark",
+        positionTitle: "Bagger",
+        location: "Rizal, Philippines",
+        description: "Bag the customers groceries.",
+        startDate: "06/2022",
+        endDate: "08/2022",
         // isCollapsed: true,
         // isHidden: false,
         id: uniqid(),
