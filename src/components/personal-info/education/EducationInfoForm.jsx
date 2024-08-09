@@ -5,7 +5,7 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import "../../styles/personal-info.css"
 import { useState } from 'react'
 
-const Education = ({ data, handleData }) => {
+const EducationInfoForm = ({ data, handleData }) => {
   const [clicked, setCliked] = useState(false)
 
   return (
@@ -79,5 +79,5 @@ const Education = ({ data, handleData }) => {
 
 }
 
-export default Education
+export default EducationInfoForm
 

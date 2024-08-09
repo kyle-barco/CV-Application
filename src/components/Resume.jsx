@@ -1,11 +1,11 @@
-import IntroSection from "./personal-info/intro/IntroSection"
+import IntroPersonalInfoSection from "./personal-info/intro/IntroPersonalInfoSection"
 import MainContent from "./personal-info/main-content/MainContent"
 import './styles/resume.css'
 
 const Resume = ({ personalInfo, sections }) => {
   return (
     <main className="resume-container">
-      <IntroSection
+      <IntroPersonalInfoSection
         profilePic={personalInfo.profilePicUrl}
         fullName={personalInfo.fullName}
         currPos={personalInfo.currentPosition}

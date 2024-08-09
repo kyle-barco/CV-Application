@@ -13,6 +13,7 @@
 /* INTRO */
 .intro-section {
   display: flex;
+  gap: .85em;
   color: white;
   justify-content: space-around;
   align-items: center;
@@ -33,11 +34,11 @@
 }
 
 .intro-infos-container {
-  max-width: 70%;
+  width: 70%;
 }
 
 .img-container {
-  max-width: 30%;
+  width: 30%;
 }
 
 .img-container img {
@@ -84,12 +85,12 @@
 
 .contact-resume,
 .education-resume {
-  max-width: 100%;
+  width: 100%;
 }
 
 .job-experience-resume,
 .contact-and-education-wrapper {
-  max-width: 50%;
+  width: 50%;
 }
 
 .job-experience-list-item,
@@ -102,7 +103,7 @@ table {
   border-collapse: collapse;
 }
 
-.input-value{
+.input-value {
   word-break: break-all;
 }
 
@@ -133,13 +134,13 @@ table {
 
 .job-start-end-date,
 .school-start-end-date {
-  max-width: 30%;
+  width: 30%;
   overflow-wrap: break-word;
 }
 
 .company-position-desc,
 .school-degree-location {
-  max-width: 70%;
+  idth: 70%;
 }
 
 .education-list {
@@ -147,11 +148,11 @@ table {
   gap: 0.5em;
 }
 
-td:not(.input-value){
+td:not(.input-value) {
   color: var(--clr-font-secondary);
   font-weight: 600;
 }
 
-.angles-right{
+.angles-right {
   color: var(--clr-font-secondary);
 }

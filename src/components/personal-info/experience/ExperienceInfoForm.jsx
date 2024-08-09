@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { useState } from "react"
 import uniqid from 'uniqid'
 
-const Experience = ({ handleData, data }) => {
+const ExperienceInfoForm = ({ handleData, data }) => {
   const [clicked, setClicked] = useState(false)
 
   return (
@@ -76,9 +76,7 @@ const Experience = ({ handleData, data }) => {
           </div>
         </form>
       </div >
-
-
     </div >
   )
 }
-export default Experience
+export default ExperienceInfoForm

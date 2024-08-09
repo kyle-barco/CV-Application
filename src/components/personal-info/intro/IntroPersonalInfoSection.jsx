@@ -1,4 +1,4 @@
-const IntroSection = ({ profilePic, fullName, currPos, abtSelf }) => {
+const IntroPersonalInfoSection = ({ profilePic, fullName, currPos, abtSelf }) => {
   return (
     <>
       <div className="intro-section">
@@ -16,4 +16,4 @@ const IntroSection = ({ profilePic, fullName, currPos, abtSelf }) => {
   )
 }
 
-export default IntroSection
+export default IntroPersonalInfoSection

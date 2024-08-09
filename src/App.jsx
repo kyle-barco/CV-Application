@@ -1,13 +1,14 @@
 import { useState } from 'react'
 
 import Header from './components/Header'
-import IntroPersonalInfoForm from './components/personal-info/intro/IntroPersonalInfoGroup'
+import IntroPersonalInfoForm from './components/personal-info/intro/IntroPersonalInfoForm'
+import EducationInfoForm from './components/personal-info/education/EducationInfoForm'
+import ExperienceInfoForm from './components/personal-info/experience/ExperienceInfoForm'
 import Resume from './components/Resume'
 import exampleData from './exampleData'
-import Education from './components/personal-info/education/Education'
+
 import 'font-awesome/css/font-awesome.min.css'
 import './App.css'
-import Experience from './components/personal-info/experience/Experience'
 
 function App() {
   const [personalInfo, setPersonalInfo] = useState(exampleData.personalInfo)
@@ -54,11 +55,11 @@ function App() {
           pictureUpload={handleIntroPersonalInfoPic}
           handleData={handleIntroPersonalInfo}
         />
-        <Education
+        <EducationInfoForm
           handleData={handleSectionChange}
           data={sections}
         />
-        <Experience
+        <ExperienceInfoForm
           handleData={handleSectionChange}
           data={sections}
         />
