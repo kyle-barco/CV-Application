@@ -1,3 +1,4 @@
+
 :root {
   --clr-intro-bg: #959595;
   --clr-font: #a8dded;
@@ -91,6 +92,7 @@
 .job-experience-resume,
 .contact-and-education-wrapper {
   width: 50%;
+  margin-bottom: 1.75em;
 }
 
 .job-experience-list-item,
@@ -140,7 +142,7 @@ table {
 
 .company-position-desc,
 .school-degree-location {
-  idth: 70%;
+  width: 70%;
 }
 
 .education-list {
