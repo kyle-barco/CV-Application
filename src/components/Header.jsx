@@ -1,14 +1,19 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import './styles/header.css'
+import { faDownload } from '@fortawesome/free-solid-svg-icons'
+import '../styles/header.css'
 
 const Header = () => {
   return (
     <>
-      <header className="header container">
+      <header className="header">
         <h1>CV Application Project</h1>
         <div className="socials">
           <ul>
+            <li className="icons">
+              <FontAwesomeIcon icon={faDownload} />
+
+            </li>
             <li className="icons">
               <a href="https://github.com/kyle-barco" target="_blank">
                 <FontAwesomeIcon icon={faGithub} className='icons gitihub-icon' />

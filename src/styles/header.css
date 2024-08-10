@@ -1,0 +1,17 @@
+.header {
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.socials ul {
+  display: flex;
+  gap: 1em;
+}
+
+.icons svg {
+  color: black;
+  cursor: pointer;
+  font-size: 30px;
+}

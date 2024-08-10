@@ -1,10 +1,16 @@
 .expand-section {
+  cursor: pointer;
   width: 100%;
   display: flex;
   align-items: center;
   font-size: .65rem;
   justify-content: space-between;
   gap: 1em;
+  border: none;
+}
+
+.forms{
+  width: 100%
 }
 
 .section-content {
@@ -18,3 +24,8 @@
   z-index: 2;
 }
 
+@media (min-width: 48em) {
+  .forms{
+    width: 25%
+  }
+}

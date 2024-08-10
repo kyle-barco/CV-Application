@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import { useRef } from 'react'
+import { useReactToPrint } from 'react-to-print'
 
 import Header from './components/Header'
 import IntroPersonalInfoForm from './components/personal-info/intro/IntroPersonalInfoForm'
@@ -46,30 +48,34 @@ function App() {
   }
 
   return (
-    <>
+    <div className='container'>
       <Header />
-      <aside className='forms'>
 
-        <IntroPersonalInfoForm
-          data={personalInfo}
-          pictureUpload={handleIntroPersonalInfoPic}
-          handleData={handleIntroPersonalInfo}
-        />
-        <EducationInfoForm
-          handleData={handleSectionChange}
-          data={sections}
-        />
-        <ExperienceInfoForm
-          handleData={handleSectionChange}
-          data={sections}
-        />
-      </aside>
+      <div className="resume-edit-section">
 
-      <Resume
-        personalInfo={personalInfo}
-        sections={sections}
-      />
-    </>
+        <aside className='forms'>
+
+          <IntroPersonalInfoForm
+            data={personalInfo}
+            pictureUpload={handleIntroPersonalInfoPic}
+            handleData={handleIntroPersonalInfo}
+          />
+          <EducationInfoForm
+            handleData={handleSectionChange}
+            data={sections}
+          />
+          <ExperienceInfoForm
+            handleData={handleSectionChange}
+            data={sections}
+          />
+        </aside>
+
+        <Resume
+          personalInfo={personalInfo}
+          sections={sections}
+        />
+      </div>
+    </div>
   )
 }
 

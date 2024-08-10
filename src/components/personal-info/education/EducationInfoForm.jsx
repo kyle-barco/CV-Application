@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import uniqid from 'uniqid'
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
-import "../../styles/personal-info.css"
+import "../../../styles/personal-info.css"
 import { useState } from 'react'
 
 const EducationInfoForm = ({ data, handleData }) => {

@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
-import "../../styles/personal-info.css"
+import "../../../styles/personal-info.css"
 import { useState } from 'react'
 
 const IntroPersonalInfoForm = ({ data, pictureUpload, handleData }) => {
@@ -18,7 +18,6 @@ const IntroPersonalInfoForm = ({ data, pictureUpload, handleData }) => {
       </button>
       <div className={`section-content ${clicked ? "open" : ''}`}>
         <div className="intro">
-          <h3>Introduction</h3>
           <div className="profile-pic">
             <input
               onChange={pictureUpload}
@@ -50,7 +49,6 @@ const IntroPersonalInfoForm = ({ data, pictureUpload, handleData }) => {
           </div>
         </div>
         <div className="contact">
-          <h3>Contact</h3>
           <div className="email">
             <input
               onChange={handleData}

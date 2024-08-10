@@ -1,7 +1,8 @@
 import IntroPersonalInfoSection from "./personal-info/intro/IntroPersonalInfoSection"
 import ExperienceInfoSection from "./personal-info/experience/ExperienceInfoSection"
 import EducationInfoSection from "./personal-info/education/EducationInfoSection"
-import './styles/resume.css'
+import ContactInfoSection from './personal-info/intro/ContactInfoSection'
+import '../styles/resume.css'
 
 const Resume = ({ personalInfo, sections }) => {
   return (
@@ -12,13 +13,26 @@ const Resume = ({ personalInfo, sections }) => {
         currPos={personalInfo.currentPosition}
         abtSelf={personalInfo.aboutSelf}
       />
-      <ExperienceInfoSection
-        experiences={sections.experiences}
-      />
-      <EducationInfoSection
-        educations={sections.educations}
-      />
 
+      <div className="main-content">
+
+        <ExperienceInfoSection
+          experiences={sections.experiences}
+        />
+        <div className="contact-and-education-wrapper">
+
+          <EducationInfoSection
+            educations={sections.educations}
+          />
+
+          <ContactInfoSection
+            email={personalInfo.email}
+            mobileNum={personalInfo.phoneNumber}
+            facebook={personalInfo.facebookAcc}
+            website={personalInfo.websiteUrl}
+          />
+        </div>
+      </div>
     </main>
   )
 }
