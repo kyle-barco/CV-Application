@@ -22,3 +22,32 @@ img {
 .forms .form-item {
   margin-bottom: 1em;
 }
+
+.form-style {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  padding: 1em 1em 0 0;
+}
+
+.form-style label {
+  display: block;
+}
+
+.form-style input,
+.form-style textarea {
+  font-family: inherit;
+  font-size: 0.9rem;
+  outline: 2px solid;
+  outline: none;
+  resize: none;
+  border: 1px solid gray;
+  padding: 0.5rem 0.25rem;
+  background-color: transparent;
+  width: 100%;
+}
+
+.form-style input:focus,
+.form-style textarea:focus {
+  border: 2px solid #0f91ba;
+}

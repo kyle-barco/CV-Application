@@ -1,7 +1,6 @@
 import { useState } from 'react'
-import { useRef } from 'react'
 import { useReactToPrint } from 'react-to-print'
-
+import { useRef } from 'react'
 import Header from './components/Header'
 import IntroPersonalInfoForm from './components/personal-info/intro/IntroPersonalInfoForm'
 import EducationInfoForm from './components/personal-info/education/EducationInfoForm'
@@ -47,9 +46,16 @@ function App() {
     })
   }
 
+  const componentRef = useRef()
+  const handlePrint = useReactToPrint({
+    content: () => componentRef.current,
+    documentTitle: `${personalInfo.fullName}'s Resume`
+  })
+
+
   return (
     <div className='container'>
-      <Header />
+      <Header handlePrint={handlePrint} />
 
       <div className="resume-edit-section">
 
@@ -71,6 +77,7 @@ function App() {
         </aside>
 
         <Resume
+          reference={componentRef}
           personalInfo={personalInfo}
           sections={sections}
         />

@@ -3,7 +3,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faDownload } from '@fortawesome/free-solid-svg-icons'
 import '../styles/header.css'
 
-const Header = () => {
+const Header = ({handlePrint}) => {
   return (
     <>
       <header className="header">
@@ -11,7 +11,7 @@ const Header = () => {
         <div className="socials">
           <ul>
             <li className="icons">
-              <FontAwesomeIcon icon={faDownload} />
+              <FontAwesomeIcon onClick={handlePrint} icon={faDownload} />
 
             </li>
             <li className="icons">

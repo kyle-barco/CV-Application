@@ -21,7 +21,7 @@ const EducationInfoForm = ({ data, handleData }) => {
         <form
           data-array-name="educations"
           id={uniqid()}
-          className="education-form section-form">
+          className="education-form form-style section-form">
           <div className="form-input school-name">
             <label htmlFor="">School Name </label>
             <input

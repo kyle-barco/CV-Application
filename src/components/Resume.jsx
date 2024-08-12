@@ -4,9 +4,9 @@ import EducationInfoSection from "./personal-info/education/EducationInfoSection
 import ContactInfoSection from './personal-info/intro/ContactInfoSection'
 import '../styles/resume.css'
 
-const Resume = ({ personalInfo, sections }) => {
+const Resume = ({ personalInfo, sections, reference }) => {
   return (
-    <main className="resume-container">
+    <main className="resume-container" ref={reference}>
       <IntroPersonalInfoSection
         profilePic={personalInfo.profilePicUrl}
         fullName={personalInfo.fullName}

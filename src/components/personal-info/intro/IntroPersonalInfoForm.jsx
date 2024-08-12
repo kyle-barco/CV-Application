@@ -16,14 +16,19 @@ const IntroPersonalInfoForm = ({ data, pictureUpload, handleData }) => {
         <FontAwesomeIcon icon={clicked ? faChevronUp : faChevronDown} className='icons' />
 
       </button>
-      <div className={`section-content ${clicked ? "open" : ''}`}>
-        <div className="intro">
+      <div className={`section-content form-input ${clicked ? "open" : ''}`}>
+        <div className="intro form-style">
           <div className="profile-pic">
             <input
+              className='profile-pic-input'
               onChange={pictureUpload}
-              type="file" />
+              type="file"
+              accept="image/*"
+            />
+            <span>Add Image</span>
           </div>
           <div className="fullName">
+            <label htmlFor="fullName">Full Name: </label>
             <input
               placeholder="Enter Full Name"
               value={data.fullName}
@@ -31,7 +36,8 @@ const IntroPersonalInfoForm = ({ data, pictureUpload, handleData }) => {
               onChange={handleData}
               type="text" />
           </div>
-          <div className="current-position">
+          <div className="current-position-input">
+            <label htmlFor="currentPosition">Current Position: </label>
             <input
               placeholder="Enter Your current position/job/state"
               value={data.currentPosition}
@@ -40,6 +46,7 @@ const IntroPersonalInfoForm = ({ data, pictureUpload, handleData }) => {
               type="text" />
           </div>
           <div className="bio">
+            <label htmlFor="aboutSelf">Bio: </label>
             <textarea
               placeholder="Tell something about yourself..."
               value={data.aboutSelf}
@@ -48,7 +55,8 @@ const IntroPersonalInfoForm = ({ data, pictureUpload, handleData }) => {
               name="" id=""></textarea>
           </div>
         </div>
-        <div className="contact">
+        <div className="contact form-style">
+          <label htmlFor="email">Email: </label>
           <div className="email">
             <input
               onChange={handleData}
@@ -57,6 +65,7 @@ const IntroPersonalInfoForm = ({ data, pictureUpload, handleData }) => {
               type="email" />
           </div>
           <div className="phone-number">
+            <label htmlFor="phone-number">Phone Number: </label>
             <input
               onChange={handleData}
               data-key="phoneNumber"
@@ -64,6 +73,7 @@ const IntroPersonalInfoForm = ({ data, pictureUpload, handleData }) => {
               type="text" />
           </div>
           <div className="facebook-acc">
+            <label htmlFor="facebookAcc">Facebook: </label>
             <input
               onChange={handleData}
               data-key="facebookAcc"
@@ -71,6 +81,7 @@ const IntroPersonalInfoForm = ({ data, pictureUpload, handleData }) => {
               type="text" />
           </div>
           <div className="website-url">
+            <label htmlFor="website">Website</label>
             <input
               onChange={handleData}
               data-key="websiteUrl"

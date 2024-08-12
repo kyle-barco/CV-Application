@@ -6,20 +6,20 @@ const exampleData = {
     currentPosition: "Sofware Developer",
     aboutSelf: "pogi",
     profilePicUrl: "https://avatars.githubusercontent.com/u/101305133?v=4",
-    email: "kyle.barco@example.email.com",
+    email: "kb@example.com",
     phoneNumber: "+44 3245 5521 5521",
     facebookAcc: "Kyle Barco",
-    websiteUrl: "kb.example.com",
+    websiteUrl: "example.com",
     address: "Manila, Philippines",
   },
 
   sections: {
     educations: [
       {
-        degree: "Diploma in Information Technology",
+        degree: "BS Information Technology",
         schoolName: "Polytechnic University Of The Philippines",
         location: "Sta. Mesa Manila, Philippines",
-        startDate: "08/2020",
+        startDate: "08/2024",
         endDate: "present",
         // isCollapsed: true,
         // isHidden: false,
@@ -53,8 +53,7 @@ const exampleData = {
         companyName: "Black Mesa Labs",
         positionTitle: "UX Research Assistant",
         location: "Berlin, Germany",
-        description:
-          "Supported senior researchers on accessibility standards for the open web. Created and usability tested wireframes and prototypes. Produced interactive documentation for quick onboarding of new researchers.",
+        description: "Nag reresearch",
         startDate: "04/2018",
         endDate: "02/2019",
         // isCollapsed: true,

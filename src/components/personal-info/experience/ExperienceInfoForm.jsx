@@ -19,7 +19,7 @@ const ExperienceInfoForm = ({ handleData, data }) => {
       <div className={`section-content ${clicked ? 'open' : ''}`}>
         <form
           data-array-name='experiences'
-          className="experience-form section-form"
+          className="experience-form form-style section-form"
           id={uniqid()}
           action="">
           <div className="expercience-form">
