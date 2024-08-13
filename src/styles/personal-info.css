@@ -14,17 +14,17 @@
 }
 
 .profile-pic {
-  padding: 0.5em 0.25em;
+  padding: 0.25em;
   background: #0f91ba;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
   color: #fff;
-  font-size: 1em;
+  font-size: .85em;
   font-weight: bold;
   position: relative;
   text-align: center;
-  width: 120px;
+  max-width: 6.5rem;
   cursor: pointer;
 }
 .profile-pic:hover,
