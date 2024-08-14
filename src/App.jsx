@@ -10,6 +10,7 @@ import uniqid from "uniqid"
 
 import 'font-awesome/css/font-awesome.min.css'
 import './App.css'
+import AddExperience from './components/personal-info/experience/AddExperience'
 
 function App() {
   const [personalInfo, setPersonalInfo] = useState(exampleData.personalInfo)
@@ -39,10 +40,9 @@ function App() {
     setSections({
       ...sections,
       [arrayName]: section.map((obj) => {
-        // if (obj.id === id) {
-        //   obj[key] = inputValue
-        // } 
-        obj[key] = inputValue
+        if (obj.id === id) {
+          obj[key] = inputValue
+        }
         return obj
       })
     })
@@ -58,6 +58,18 @@ function App() {
   function createEducationForm() {
     createForm("educations", {
       schoolName: "",
+      degree: "",
+      location: "",
+      startDate: "",
+      endDate: "",
+      isCollapsed: false,
+      id: uniqid()
+    })
+  }
+
+  function createExperienceForm() {
+    createForm("experiences", {
+      companyName: "",
       degree: "",
       location: "",
       startDate: "",
@@ -141,6 +153,16 @@ function App() {
             onRemove={removeForm}
           />
 
+          <AddExperience
+            experiences={sections.experiences}
+            isOpen={sectionOpen === "Experience"}
+            onChange={handleSectionChange}
+            createForm={createExperienceForm}
+            setOpen={setOpen}
+            onCancel={cancelForm}
+            toggleCollapsed={toggleCollapsed}
+            onRemove={removeForm}
+          />
 
         </aside>
 

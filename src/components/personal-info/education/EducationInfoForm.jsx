@@ -2,7 +2,7 @@ import InputGroup from '../../InputGroup'
 import Buttons from '../../Buttons'
 
 const EducationInfoForm = (props) => {
-  const { schoolName, degree, location, startDate, endDate } = props.form
+  const { schoolName, degree, location, startDate, endDate, id } = props.form
   const { onChange, cancel, save, remove } = props
   return (
     <div className="education-section form-item" >

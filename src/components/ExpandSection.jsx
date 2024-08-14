@@ -6,7 +6,7 @@ const ExpandSection = ({ isOpen, setOpen, sectionName, iconName }) => {
   return (
     <button
       className="expand-section"
-      onClick={setOpen(isOpen ? "" : sectionName)}
+      onClick={() => setOpen(isOpen ? "" : sectionName)}
     >
       <h2 className="expand-section-header">
         <FontAwesomeIcon icon={iconName} />

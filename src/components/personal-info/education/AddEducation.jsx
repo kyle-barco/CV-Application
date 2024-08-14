@@ -4,7 +4,6 @@ import CreateForm from "../../CreateForm";
 import EducationInfoForm from "./EducationInfoForm";
 import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 
-
 const AddEducation = ({
   educations,
   isOpen,
@@ -36,7 +35,7 @@ const AddEducation = ({
           titleKey="schoolName"
           arrayName="educations"
         />
-        <CreateForm onClick={createForm} buttonText="Education" />
+        <CreateForm onClick={createForm} buttonText="Add Education" />
       </div>
     </div>
   )
