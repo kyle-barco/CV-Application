@@ -19,6 +19,10 @@ img {
   max-width: 100%;
 }
 
+button {
+  cursor: pointer;
+}
+
 .forms .form-item {
   margin-bottom: 1em;
 }
@@ -31,6 +35,7 @@ img {
 }
 
 .form-style label {
+  font-weight: 500;
   display: block;
 }
 
