@@ -94,10 +94,25 @@ function App() {
   }
 
   function cancelForm(e) {
-    if (prevState === null) {
-      removeForm(e)
-      return
+    if (prevState == null) {
+      removeForm(e);
+      return;
     }
+
+    const sectionForm = e.target.closest(".section-form")
+    const { id } = sectionForm
+    const { arrayName } = sectionForm.dataset
+    const section = sections[arrayName]
+
+    setSections({
+      ...sections,
+      [arrayName]: section.map(form => {
+        if (form.id === id) {
+          form = prevState
+          form.isCollapsed = true
+        }
+      })
+    })
   }
 
   function toggleValue(e, key) {

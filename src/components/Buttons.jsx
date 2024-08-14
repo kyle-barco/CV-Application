@@ -9,8 +9,8 @@ const Buttons = ({ save, cancel, remove }) => {
         Delete
       </button>
       <div className="main-buttons">
-        <button className="cancel" onClick={cancel}>Cancel</button>
-        <button className="save" onClick={save}>Save</button>
+        <button className="cancel" onClick={cancel} type="button">Cancel</button>
+        <button className="save" onClick={save} type="submit">Save</button>
       </div>
     </div>
   )
