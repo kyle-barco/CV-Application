@@ -12,7 +12,7 @@ const DisplayForm = ({
 }) => {
   return (
     <div className="forms-container">
-      {forms.map(form =>
+      {forms.map((form) =>
         form.isCollapsed ? (
           <CollapsedForm
             onClick={toggleCollapsed}

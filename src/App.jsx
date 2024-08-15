@@ -111,6 +111,7 @@ function App() {
           form = prevState
           form.isCollapsed = true
         }
+        return form
       })
     })
   }

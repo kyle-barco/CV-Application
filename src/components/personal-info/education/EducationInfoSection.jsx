@@ -3,7 +3,7 @@ import DisplaySection from "../../DisplaySection";
 
 const EducationInfoSection = ({ educations }) => {
   return (
-    <div className="education">
+    <div className="education resume-section">
       <DisplaySection
         array={educations}
         InfoComponent={EducationInfo}

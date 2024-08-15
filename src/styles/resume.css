@@ -83,11 +83,11 @@
 .contact-resume,
 .education-resume {
   width: 100%;
-  margin-top: 1em;
+  /* margin-top: 1em; */
 }
 
 .job-experience-resume,
-.contact-and-education-wrapper {
+.education-list {
   margin-bottom: 1.75em;
 }
 

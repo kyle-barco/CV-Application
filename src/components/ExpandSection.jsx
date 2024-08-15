@@ -2,6 +2,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
+import "../styles/forms.css"
+
 const ExpandSection = ({ isOpen, setOpen, sectionName, iconName }) => {
   return (
     <button
@@ -12,7 +14,7 @@ const ExpandSection = ({ isOpen, setOpen, sectionName, iconName }) => {
         <FontAwesomeIcon icon={iconName} />
         {sectionName}
       </h2>
-      <FontAwesomeIcon icon={isOpen ? faChevronUp : faChevronDown} className='icons' />
+      <FontAwesomeIcon icon={isOpen ? faChevronUp : faChevronDown} className='chevron icons' />
 
     </button>
   )

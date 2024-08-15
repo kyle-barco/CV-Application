@@ -3,6 +3,7 @@ import ExpandSection from "../../ExpandSection"
 import DisplayForm from "../../DisplayForm"
 import ExperienceInfoForm from "./ExperienceInfoForm"
 import CreateForm from "../../CreateForm"
+import { faAdd } from "@fortawesome/free-solid-svg-icons"
 
 const AddExperience = ({
   experiences,
@@ -34,7 +35,7 @@ const AddExperience = ({
           titleKey="companyName"
           arrayName="experiences"
         />
-        <CreateForm onClick={createForm} buttonText="Experience"/>
+        <CreateForm onClick={createForm} buttonText=" Experience" iconName={faAdd}/>
       </div>
     </div>
   )

@@ -5,7 +5,7 @@ const EducationInfoForm = (props) => {
   const { schoolName, degree, location, startDate, endDate, id } = props.form
   const { onChange, cancel, save, remove } = props
   return (
-    <div className="education-section form-item" >
+    <div className="education-section form-item section" >
       <form
         data-array-name="educations"
         id={id}

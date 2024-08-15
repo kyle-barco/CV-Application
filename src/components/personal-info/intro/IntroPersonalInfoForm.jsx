@@ -3,17 +3,18 @@ import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import "../../../styles/personal-info.css"
 import { useState } from 'react'
+import { faUser } from '@fortawesome/free-solid-svg-icons'
 
 const IntroPersonalInfoForm = ({ data, pictureUpload, handleData }) => {
   const [clicked, setCliked] = useState(false)
 
   return (
-    <div className="intro-personal form-item" >
+    <div className="intro-personal form-item section" >
       <button
         onClick={() => setCliked(!clicked)}
         className="expand-section">
-        <h2>Personal Information</h2>
-        <FontAwesomeIcon icon={clicked ? faChevronUp : faChevronDown} className='icons' />
+        <h2 className='expand-section-header'><FontAwesomeIcon icon={faUser}/>Personal Information</h2>
+        <FontAwesomeIcon icon={clicked ? faChevronUp : faChevronDown} className='chevron icons' />
 
       </button>
       <div className={`section-content form-input ${clicked ? "open" : ''}`}>
