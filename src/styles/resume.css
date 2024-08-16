@@ -7,7 +7,7 @@
 
 .resume-container {
   font-size: 0.85rem;
-  margin-top: 1.5em;
+  /* margin-top: 1.5em; */
 }
 
 /* INTRO */
@@ -38,7 +38,7 @@
 }
 
 .img-container {
-  width: 30%;
+  max-width: 30%;
 }
 
 .img-container img {
@@ -71,7 +71,7 @@
 .main-content {
   background: var(--clr-main-content-bg);
   padding: 1.5em 1em 1em 1em;
-  min-height: 20rem;
+  min-height: 68.5vh;
 }
 
 .title-resume {
@@ -233,5 +233,17 @@ td:not(.input-value) {
   .resume-container {
     width: 75%;
     margin-top: 0;
+  }
+}
+
+@media (min-width: 50em) {
+  .img-container {
+    max-width: 25%;
+  }
+}
+
+@media (min-width: 62.5em) {
+  .img-container {
+    max-width: 20%;
   }
 }
