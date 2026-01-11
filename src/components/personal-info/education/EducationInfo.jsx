@@ -11,8 +11,8 @@ const EducationInfo = ({ info }) => {
         </div>
         <div className="school-degree-location">
           <li className="education-list-item school-name-resume">{schoolName}</li>
-          <li className="education-list-item degree-resume">{degree}</li>
           <li className="education-list-item">{location}</li>
+          <li className="education-list-item degree-resume">{degree}</li>
         </div>
       </ul>
     </div>
