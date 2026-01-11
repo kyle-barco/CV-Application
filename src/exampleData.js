@@ -7,16 +7,16 @@ const exampleData = {
     aboutSelf: "pogi",
     profilePicUrl: "https://avatars.githubusercontent.com/u/101305133?v=4",
     email: "kylebarco04@gmail.com",
-    phoneNumber: "09563966705",
+    phoneNumber: "095626763614",
     facebookAcc: "Kyle Barco",
-    websiteUrl: "kyleperspectives.pages.dev",
+    // websiteUrl: "kyleperspectives.pages.dev",
     address: "Manila, Philippines",
   },
 
   sections: {
     educations: [
       {
-        degree: "BS Information Technology",
+        degree: "Diploma in Information Technology",
         schoolName: "Polytechnic University Of The Philippines",
         location: "Sta. Mesa Manila, Philippines",
         startDate: "06/2024",
@@ -55,7 +55,17 @@ const exampleData = {
 
     experiences: [
       {
-        companyName: "KIDS International Ministry Organization",
+        companyName: "Lone Wolf Technologies",
+        positionTitle: "Quality Assurance - Internship",
+        location: "BGC Taguig, Philippines",
+        description: "Conduct manual testing to improve software quality.",
+        startDate: "03/2023",
+        endDate: "06/2023",
+        isCollapsed: true,
+        id: uniqid(),
+      },
+      {
+        companyName: "Topnoms",
         positionTitle: "Data Entry Operator",
         location: "Cainta Rizal, Philippines",
         description: "Compile and verify data.",
