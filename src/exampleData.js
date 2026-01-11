@@ -86,7 +86,7 @@ const exampleData = {
       },
       {
         companyName: "Palmera Dimsum House",
-        positionTitle: "On Call Waiter",
+        positionTitle: "Waiter",
         location: "Tatay Rizal, Philippines",
         description:
           "Served foods and beverages while maintaining high-quality formal table service to over 100+ customers.",
@@ -97,11 +97,11 @@ const exampleData = {
       },
       {
         companyName: "Paul Calvin's Catering",
-        positionTitle: "On Call Waiter",
+        positionTitle: "Waiter",
         location: "Tatay Rizal, Philippines",
         description:
           "Served foods and beverages while maintaining high-quality formal table service to over 100+ customers.",
-        startDate: "11/2019",
+        startDate: "07/2018",
         endDate: "03/2020",
         isCollapsed: true,
         id: uniqid(),
