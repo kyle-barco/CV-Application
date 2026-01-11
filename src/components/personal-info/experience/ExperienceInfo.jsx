@@ -13,6 +13,7 @@ const ExperienceInfo = ({
           <li className="job-experience-list-item company-name-resume">{info.companyName}</li>
           <li className="job-experience-list-item position-title-resume">{info.positionTitle}</li>
           <li className="job-experience-list-item job-description-resume">{info.description}</li>
+          <li className="job-experience-list-item job-description-resume">{info.location}</li>
         </div>
       </ul>
     </div>
